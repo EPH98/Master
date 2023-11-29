@@ -1,0 +1,18 @@
+{
+  "name": "exercise-files",
+  "version": "1.0.0",
+  "description": "Automated software testing w/ playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium"
+  },
+  "author": "dustbox",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.36.2",
+    "prettier": "^3.0.0"
+  }
+}
